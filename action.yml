@@ -29,10 +29,6 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.sdk-version }}
-    - ${{ inputs.project-dir }}
-    - ${{ inputs.package }}
 branding:
   color: 'gray-dark'
   icon: 'archive'
