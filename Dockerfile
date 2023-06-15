@@ -5,4 +5,4 @@ RUN apt-get install --yes bzip2 wget libxext6 libllvm6.0 mesa-utils
 
 COPY build.sh /build.sh
 
-ENTRYPOINT ["/build.sh"]
+RUN ["chmod","+x","/build.sh"]
